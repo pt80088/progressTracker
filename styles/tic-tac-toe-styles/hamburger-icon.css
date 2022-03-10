@@ -1,0 +1,116 @@
+nav {
+  padding: 2rem;
+}
+
+a {
+  color: rgb(0, 206, 34);
+  text-decoration: none;
+  word-break: keep-all;
+}
+
+a:hover {
+  color: rgb(65, 255, 106);
+  text-decoration: none;
+}
+
+.menu-icon {
+  padding: 2rem 1rem;
+  background-color: rgba(17, 17, 17, 0.683);
+  border-radius: 1px;
+}
+
+#hamburger-icon-aside {
+  display: inline-block;
+}
+
+#hamburger-icon {
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
+  background-color: rgba(17, 17, 17, 0.683);
+  padding: 0.5rem 0.8rem;
+}
+#hamburger-icon:hover {
+  cursor: pointer;
+}
+
+#hamburger-exit-aside {
+  display: inline-block;
+}
+
+#hamburger-exit-icon {
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
+  background-color: rgba(17, 17, 17, 0.683);
+  padding: 0.2rem 0.8rem;
+  visibility: hidden;
+}
+
+#hamburger-exit-icon:hover {
+  cursor: pointer;
+}
+
+#hamburger-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  width: 2.5%;
+}
+
+#hamburger-container > span {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(117, 249, 139);
+  box-shadow: rgb(29, 29, 29) 1px 2px 2px;
+  margin: 6px 0;
+  cursor: pointer;
+  background-color: rgb(176, 254, 189);
+}
+
+#hamburger-container > span:hover {
+  cursor: pointer;
+  background-color: rgb(176, 254, 189);
+}
+
+#hamburger-menu {
+  width: 10%;
+  padding: 2rem;
+  margin-top: 0.2rem;
+  background-color: rgba(17, 17, 17, 0.683);
+  position: fixed;
+  right: 4rem;
+  top: 5.8rem;
+  padding: 2rem;
+  border: 1px rgb(29, 29, 29);
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  visibility: hidden;
+}
+
+#hamburger-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#hamburger-menu ul a:hover {
+  cursor: pointer;
+}
+
+#hamburger-menu ul li {
+  margin: 1rem;
+  word-wrap: normal;
+  text-align: center;
+}
+
+#hamburger-exit-container {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  /* visibility: hidden; */
+}
+#hamburger-exit-container span {
+  color: rgb(117, 249, 139);
+}

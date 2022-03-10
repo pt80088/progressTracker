@@ -1,0 +1,97 @@
+<!--My site-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Libre+Franklin:wght@300;600&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/shared.css" rel="stylesheet" />
+    <link href="styles/daily-challenge.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/canvas.js" type="module" defer></script>
+    <script src="scripts/server.js"></script>
+    <title>Toby Codes</title>
+  </head>
+  <body>
+    <canvas id="canvas">Browser does not support canvas</canvas>
+    <header>
+      
+      <nav>
+        
+        <aside id="hamburger-icon-aside">
+        <div id="hamburger-icon">
+      <div id="hamburger-container">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        </div>
+        </aside>
+        <aside id="hamburger-exit-aside" >
+        <div  id="hamburger-exit-icon">
+          <div id="hamburger-exit-container">
+            <span>X</span>
+            
+            </div>
+          </div>
+          </aside>
+          
+
+      
+      
+        
+      </nav>
+      <aside>
+
+        <div id="hamburger-menu"><ul>
+          <li><a href="index.html">Daily Challenge</a></li>
+          <li><a href="full-week.html">Calendar</a></li>
+          <li><a href="tic-tac-toe.html">Tic Tac Toe</a></li>
+        </ul>
+        </div>
+      </aside>
+    </header>
+    <main>
+      <section id="daily-challenge-card">
+      <img
+        src="images/curly-brackets.png"
+        alt="Curly bracket icon"
+        id="curly-brackets"
+      />
+      <h1 id="challenge-header">Toby Austin Locke's </br> coding progress tracker</h1>
+      <h2>Currently working on</h2>
+      
+      <p id="todays-challenge">JavaScript: </br> Server side code and dynamic content</p>
+      <p id="course-link-text">
+        Continuing the Udemy course:
+        <a
+        href="https://www.udemy.com/course/100-days-of-code-web-development-bootcamp/"
+        >100 Days of Code - Web Development Bootcamp [2022]</a
+        >
+        from <a href="https://academind.com/">Academind</a>
+      </p>
+      <p>Full calander <a href="/full-week.html">here</a></p>
+      </section >
+    </main>
+    <footer>
+      <ul id="social-media">
+        <li>
+          <a href="https://twitter.com/TobyAustinLocke">
+            <img src="images/icons/twitter.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/toby-austin-locke-650a6621b/"
+            ><img src="images/icons/linkedin.png"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

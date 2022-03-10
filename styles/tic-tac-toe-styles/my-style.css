@@ -1,0 +1,83 @@
+:root {
+  --purple100: rgb(246, 241, 252);
+  --purple200: rgb(239, 224, 254);
+  --purple500: rgb(157, 107, 217);
+  --purple600: rgb(138, 43, 226);
+  --purple900: rgb(73, 32, 154);
+
+  --grey900: rgb(53, 53, 53);
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--purple100);
+  color: var(--grey900);
+}
+
+header {
+  background-color: var(--purple600);
+  color: var(--purple100);
+  margin: auto;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 auto;
+}
+
+ol {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+ol li {
+  padding: 1rem 5rem;
+  background-color: var(--purple200);
+  margin: 2rem;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px rgb(170, 170, 170);
+}
+
+.player-symbol {
+  font-size: 4rem;
+}
+
+.player-name {
+  color: var(--purple900);
+}
+
+li a {
+  color: var(--purple600);
+}
+
+#start-game-button {
+  background-color: var(--purple600);
+  color: var(--purple100);
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+}
+
+#start-game-button-container {
+  text-align: center;
+}
+
+#game-container {
+  display: grid;
+  width: 50%;
+  margin: auto;
+  padding: 3rem;
+  grid-template-columns: 30% 30% 30%;
+  border-radius: none;
+}
+
+.game-squares {
+  padding: 4rem;
+  margin: 0.2rem;
+  box-shadow: none;
+  border-radius: 0px;
+}

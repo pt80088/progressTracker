@@ -1,0 +1,597 @@
+<!--
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Daily Timetable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Libre+Franklin:wght@300;600&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/shared.css" rel="stylesheet" />
+    <link href="styles/full-week.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/calendar.js" defer></script>
+    <script src="scripts/canvas.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <canvas id="canvas">Browser does not support canvas</canvas>
+    <header>
+      <h1>Calendar</h1>
+      <nav>
+        <aside id="hamburger-icon-aside">
+          <div id="hamburger-icon">
+            <div id="hamburger-container">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </aside>
+        <aside id="hamburger-exit-aside">
+          <div id="hamburger-exit-icon">
+            <div id="hamburger-exit-container">
+              <span>X</span>
+            </div>
+          </div>
+        </aside>
+        <aside>
+        <div id="hamburger-menu">
+          <ul>
+            <li><a href="index.html">Daily Challenge</a></li>
+            <li><a href="full-week.html">Calendar</a></li>
+            <li><a href="tic-tac-toe.html">Tic Tac Toe</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      </aside>
+      
+      </div>
+    </header>
+    <aside>
+      <div id="hamburger-menu">
+        <ul>
+          <li><a href="index.html">Daily Challenge</a></li>
+          <li><a href="full-week.html">Calendar</a></li>
+          <li><a href="/tic-tac-toe/index.html">Tic Tac Toe</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <div id="top-nav-arrows-container">
+        <div class="left-nav-arrows">
+          <svg
+            class="nav-arrows"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+        <h2 class="month-title" id="jan-calendar-header"><a>January</a></h2>
+        <h2 class="month-title" id="feb-calendar-header"><a>February</a></h2>
+        <h2 class="month-title" id="mar-calendar-header"><a>March</a></h2>
+        <div class="right-nav-arrows">
+          <svg
+            class="nav-arrows "
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      
+      <div id="calendar-container">
+      <aside id="jan-calendar" class="calendar">
+        
+        <ol class="daily-challenge-grid">
+          <li class="day-cards">
+            <h2 class="day-title">Day 1</h2>
+            <h2>7th January</h2>
+            <p>HTML & CSS basics</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 2</h2>
+            <h2>8th January</h2>
+            <p>Going deeper into HTML & CSSS</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 3</h2>
+            <h2>9th January</h2>
+            <p>HTML & CSS Practice & Summary</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 4</h2>
+            <h2>10th January</h2>
+            <p>HTML & CSS Practice & summary</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 6</h2>
+            <h2>11th January</h2>
+            <p>Git & Git Hub</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 7</h2>
+            <h2>12th January</h2>
+            <p>CSS: flex</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 8</h2>
+            <h2>13th January</h2>
+            <p>CSS: grid</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 9</h2>
+            <h2>14th January</h2>
+            <p>Set up new project: responsive web design food order</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 10</h2>
+            <h2>15th January</h2>
+            <p>Responsive web design: units (px, rem, rem %)</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 11</h2>
+            <h2>16th January</h2>
+            <p>Responsive web design: media queries</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 12</h2>
+            <h2>17th January</h2>
+            <p>
+              Responsive web design: clickable hamburger menu & side drawer.
+            </p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 13</h2>
+            <h2>18th January</h2>
+            <p>
+              Design: fonts, colors & SVGs. CSS: variables, transitions and
+              transformations.
+            </p>
+          </li>
+          <li class="day=cards">
+            <h2 class="day-title">Day 14</h2>
+            <h2>19th January</h2>
+            <p>Adding forms to websites</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 15</h2>
+            <h2>20th January</h2>
+            <p>More forms</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 16</h2>
+            <h2>21st January</h2>
+            <p>Even more forms</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 17</h2>
+            <h2>22nd January</h2>
+            <p>Forms: practice and revision</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 18</h2>
+            <h2>23rd January</h2>
+            <p>Introduction to JavaScript: syntax</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 19</h2>
+            <h2>24th January</h2>
+            <p>Introduction to JavaScript: objects, arrays and functions</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 20</h2>
+            <h2>25th January</h2>
+            <p>Introduction to JavaScript: methods</p>
+          </li>
+          <li class="highlight-goal">
+            <h2 class="day-title">Day 21</h2>
+            <h2><a id="day" href="index.html">26th January</a></h2>
+            <p>JavaScript: Working with the DOM</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 22</h2>
+            <h2>27th January</h2>
+            <p>JavaScript: More on the DOM</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 23</h2>
+            <h2>28th January</h2>
+            <p>JavaScript: More on the DOM</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 24</h2>
+            <h2>29th January</h2>
+            <p>JavaScript: More on the DOM</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 25</h2>
+            <h2>30th January</h2>
+            <p>JavaScript: More on the DOM</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 26</h2>
+            <h2>31st January</h2>
+            <p>JavaScript: More on the DOM</p>
+          </li>
+        </ol>
+      </aside>
+
+      <aside id="feb-calendar" class="calendar">
+        
+        <ol class="daily-challenge-grid">
+          <li class="day-cards">
+            <h2 class="day-title">Day 27</h2>
+            <h2>1st February</h2>
+            <p>JavaScript: querying elements</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 28</h2>
+            <h2>2nd February</h2>
+            <p>JavaScript: inserting new HTML elements</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 29</h2>
+            <h2>3rd February</h2>
+            <p>JavaScript: deleting & moving elements</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 30</h2>
+            <h2>4th February</h2>
+            <p>JavaScript: listening, events and changing elements</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 31</h2>
+            <h2>5th February</h2>
+            <p>JavaScript: practice project</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 32</h2>
+            <h2>6th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 33</h2>
+            <h2>7th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 34</h2>
+            <h2>8th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 35</h2>
+            <h2>9th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 36</h2>
+            <h2>10th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 37</h2>
+            <h2>11th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 38</h2>
+            <h2>12th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day=cards">
+            <h2 class="day-title">Day 39</h2>
+            <h2>13th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 40</h2>
+            <h2>14th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 41</h2>
+            <h2>15th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 42</h2>
+            <h2>16th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 43</h2>
+            <h2>17th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 44</h2>
+            <h2>18th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 45</h2>
+            <h2>19th February</h2>
+            <p>...</p>
+          </li>
+          <li>
+            <h2 class="day-title">Day 46</h2>
+            <h2><a id="day" href="index.html">20th February</a></h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 47</h2>
+            <h2>21st February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 48</h2>
+            <h2>22nd February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 49</h2>
+            <h2>23rd February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 50</h2>
+            <h2>24th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 51</h2>
+            <h2>25th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 52</h2>
+            <h2>26th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 53</h2>
+            <h2>27th February</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 54</h2>
+            <h2>28th February</h2>
+            <p>...</p>
+          </li>
+        </ol>
+      </aside>
+      <aside id="mar-calendar" class="calendar">
+        
+        <ol class="daily-challenge-grid" id="march">
+          <li class="day-cards">
+            <h2 class="day-title">Day 55</h2>
+            <h2>1st March</h2>
+            <p>JavaScript: Node.js & Express</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 56</h2>
+            <h2>2nd March</h2>
+            <p href="index.html">Personal projects: portfolio & coding tracker</p>
+          </li>
+          <li class=" day-cards" >
+            <h2 class="day-title">Day 57</h2>
+            <h2>3rd March</h2>
+            <p>
+              Personal projects: portfolio & coding tracker
+            </p>
+          </li>
+          <li class="highlight-goal" id="highlight-goal">
+            <h2 class="day-title">Day 58</h2>
+            <h2>4th March</h2>
+            <p><a href="index.html">Personal projects: portfolio & coding tracker</a></p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 59</h2>
+            <h2>5th March</h2>
+            <p>Personal projects: portfolio & coding tracker</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 60</h2>
+            <h2>6th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 61</h2>
+            <h2>7th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 62</h2>
+            <h2>8th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 63</h2>
+            <h2>9th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 64</h2>
+            <h2>10th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 65</h2>
+            <h2>11th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 66</h2>
+            <h2>12th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day=cards">
+            <h2 class="day-title">Day 67</h2>
+            <h2>13th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 68</h2>
+            <h2>14th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 69</h2>
+            <h2>15th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 70</h2>
+            <h2>16th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 71</h2>
+            <h2>17th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 72</h2>
+            <h2>18th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 73</h2>
+            <h2>19th March</h2>
+            <p>...</p>
+          </li>
+          <li>
+            <h2 class="day-title">Day 74</h2>
+            <h2><a id="day">20th March</a></h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 75</h2>
+            <h2>21st March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 76</h2>
+            <h2>22nd March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 49</h2>
+            <h2>23rd March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 50</h2>
+            <h2>24th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 51</h2>
+            <h2>25th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 52</h2>
+            <h2>26th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 53</h2>
+            <h2>27th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 54</h2>
+            <h2>28th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 54</h2>
+            <h2>29th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 54</h2>
+            <h2>30th March</h2>
+            <p>...</p>
+          </li>
+          <li class="day-cards">
+            <h2 class="day-title">Day 54</h2>
+            <h2>31st March</h2>
+            <p>...</p>
+          </li>
+        </ol>
+      </aside>
+    </div>
+      <div id="bottom-nav-arrows-container">
+        <div class="left-nav-arrows">
+          <span class="nav-arrows"><svg
+            class="nav-arrows"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+        <div class="right-nav-arrows">
+          <svg
+            class="nav-arrows"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <ul id="social-media">
+        <li>
+          <a href="https://twitter.com/TobyAustinLocke" class="calendar">
+            <img src="images/icons/twitter.png"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/toby-austin-locke-650a6621b/"
+            ><img src="images/icons/linkedin.png"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

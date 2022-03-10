@@ -1,0 +1,217 @@
+h1 {
+  font-size: 3rem;
+  color: rgb(71, 255, 101);
+  margin: 0;
+  padding: 2rem;
+  text-shadow: 4px 8px 10px rgb(2, 2, 2);
+}
+
+#description {
+  margin: 0.8rem;
+}
+
+#header-primary-container {
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header a {
+  font-size: 2rem;
+  margin-left: 1rem;
+  align-items: center;
+  padding-top: 0.8rem;
+} */
+
+#top-nav-arrows-container {
+  margin: 3rem auto;
+}
+
+.nav-arrows {
+  margin: 0;
+  width: 3rem;
+  fill: rgb(71, 255, 101);
+}
+
+.nav-arrows:hover {
+  fill: rgb(152, 247, 168);
+  cursor: pointer;
+}
+
+#top-nav-arrows-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.month-title {
+  font-size: 2rem;
+  color: rgb(71, 255, 101);
+  text-shadow: 4px 8px 10px rgba(2, 2, 2, 0.8);
+  display: inline-block;
+  padding: 0 20px;
+  font-family: "VT323", monospace;
+}
+
+#calendar-container {
+  position: relative;
+  width: 80%;
+  height: 500px;
+}
+
+main aside {
+  justify-content: center;
+}
+
+main aside ol {
+  display: grid;
+  grid-template-columns: 50% 50% 50% 50%;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(0, 206, 34);
+}
+
+ol {
+  list-style: none;
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  padding: 0;
+}
+
+.calendar li {
+  background-color: rgb(46, 46, 46);
+  box-shadow: 5px 10px rgb(46, 46, 46);
+  border-radius: 1px;
+  margin: 2rem;
+  padding: 1rem;
+  border: 6px solid rgb(66, 66, 66);
+}
+
+h2 {
+  color: rgb(0, 206, 34);
+  /* font-family: "Bebas Neue", "Courier New", Courier, monospace; */
+  font-size: 1.5rem;
+}
+
+main p {
+  margin: 0.8rem;
+  color: rgb(3, 185, 34);
+  padding-top: 2rem;
+  font-size: 1rem;
+}
+
+.daily-challenge-grid {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.day-cards {
+  transition: transform 1s ease-in, box-shadow 1s ease-in;
+}
+
+/* .day-cards:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 3px 8px rgb(0, 206, 34);
+} */
+
+#highlight-goal {
+  /* background-color: rgb(63, 63, 63); */
+  box-shadow: 2px 3px 28px rgb(0, 206, 34);
+  transition: transform 1s ease-in;
+}
+
+#highlight-goal:hover {
+  transform: scale(1.05);
+}
+
+#highlight-goal h2 a {
+  /* font-family: "VT", "Courier New", Courier, monospace; */
+  color: rgb(0, 206, 34);
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px rgb(2, 2, 2);
+}
+
+#bottom-nav-arrows-container {
+  display: flex;
+  grid-template-columns: 30% 60% 30%;
+  justify-content: space-between;
+  margin: 3rem auto;
+  align-items: center;
+}
+
+.nav-arrows:hover {
+  color: rgb(0, 206, 34);
+}
+
+/* Calendar Scrolling */
+
+#jan-calendar-header {
+  visibility: visible;
+}
+
+#feb-calendar-header {
+  visibility: visible;
+}
+
+#mar-calendar-header {
+  visibility: visible;
+}
+
+#feb-calendar-header:hover {
+  color: rgb(152, 247, 168);
+  cursor: pointer;
+}
+
+#jan-calendar {
+  visibility: visible;
+}
+
+#feb-calendar {
+  visibility: visible;
+  display: inline-block;
+  inset: 2rem 2rem 2rem 2rem;
+}
+#mar-calendar {
+  visibility: visible;
+}
+
+.calendar {
+  /* transform: translateX(100%);
+  transition: transform ease-out 0.3s; */
+}
+
+.calendar.is-open {
+  transform: translateX(0);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+  .daily-challenge-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .daily-challenge-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #desktop-home-link {
+    display: none;
+  }
+
+  #mobile-home-link {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0rem;
+  }
+}

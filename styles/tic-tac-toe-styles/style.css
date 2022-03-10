@@ -1,0 +1,59 @@
+:root {
+  --green100: rgb(181, 197, 184);
+  --green200: rgb(144, 173, 145);
+  --green300: rgb(144, 173, 145);
+  --green400: rgb(84, 124, 90);
+  --green500: rgb(63, 101, 70);
+  --green600: rgb(43, 77, 52);
+  --green700: rgb(43, 77, 52);
+  --green800: rgb(14, 34, 23);
+  --green900: rgb(46, 198, 46);
+
+  --grey300: rgb(180, 180, 180);
+  --grey400: rgb(210, 210, 210);
+  --grey600: rgb(91, 91, 91);
+  --grey800: rgb(47, 47, 47);
+  --grey900: rgb(53, 53, 53);
+  --grey950: rgb(25, 25, 25);
+}
+
+body {
+  margin: 0;
+  font-family: "Open-Sans", sans-serif;
+  color: var(--grey900);
+  background-color: var(--grey300);
+}
+
+#main-header {
+  background-color: var(--grey950);
+  color: var(--green900);
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--green700);
+  border: 1px solid var(--green700);
+  color: var(--green100);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-alt {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--green500);
+}
+
+.btn:hover {
+  background-color: var(--green800);
+  border-color: var(--green800);
+}
+
+.btn-alt:hover {
+  background-color: var(--grey600);
+  color: var(--green900);
+  border-color: transparent;
+}
